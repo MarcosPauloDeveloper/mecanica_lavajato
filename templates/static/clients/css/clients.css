@@ -1,12 +1,11 @@
 .card-dashboard{
-
+    cursor: pointer;
     background-color: var(--main-color);
     width: 50%;
     margin-left: 10px;
     margin-top: 40px;
     text-align: center;
     padding: 20px;
-
 }
 
 .text-card{
@@ -28,4 +27,12 @@
     background-color: var(--dark-color);
     padding: 5px;
     font-size: 30px;
+}
+
+#att_cliente {
+    display: none;
+}
+
+#form-att-cliente {
+    display: none;
 }
