@@ -21,7 +21,7 @@ def clients(request):
 
         cliente = Client.objects.filter(cpf=cpf)
 
-        if cliente.exists():
+        if cliente.exists:
             return render(request, 'clients.html', {'nome': nome, 'sobrenome': sobrenome, 'email': email, 'carros': zip(carros, placas, anos), })
 
         if not re.fullmatch(re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})+'), email):
